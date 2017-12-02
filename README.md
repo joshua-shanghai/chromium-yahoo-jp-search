@@ -15,5 +15,4 @@ and /private/etc/ on mac.
 2. from chromium browser, enter chromium://extensions and hit return key. then click "Load unpacked extension ..." and follow the UI to load this extension.
 
 ---
-Last modified: 2017-12-02
 joshua_shanghai@sina.com
