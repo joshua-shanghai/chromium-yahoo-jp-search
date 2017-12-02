@@ -22,7 +22,10 @@ curl -v \
 	-H "Referer: https://search.yahoo.co.jp" \
 	-H "User-agent: Mozilla/5.0 AppleWebKit/537" \
 	"http://search.yahoo.co.jp/r/FOR=7NniST5V3ihHZNmuYH5NHt.LcmiWxn8WeoEfsx7KkJiuwFOX_iGK7BjnQEAUo63bUJYir.PkU1rUPURMk8QOECmGqQz7xeabJ3l41szPwHNnUiTKARetTRBAfQ63peJqqOEr9cyP7WZp0NbR9Tld720ro7jfyzo6Y0q1S9b7sszKpr3bhiH0tg1hkmObVcBbbmMBECHTjcFtakRaCQryzF7nEDUQZk.vKcLYgdeZnUJra7e0yMjFXKP_cjlSrt_0dXOwkVt0DvPpPD5wUvCgRo5znEtbRrTVDKbiLOV2otnx1ybNPCMCvI4H3ypf_TNGxEGZ/_ylt=A2RCCbgKQCJagicAM7SDTwx.;_ylu=X3oDMTEycmhzazExBHBvcwMxBHNlYwNzcgRzbGsDdGl0bGUEdnRpZANqcDAwNDA-/SIG=14cfpb8sh/EXP=1512294858/**https%3A//ja.wikipedia.org/wiki/%25E3%2583%25A1%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8"
-  
+
+The good resonse from JP:
+----------------------------
+
 *   Trying 183.79.249.124...
 * TCP_NODELAY set
 * Connected to search.yahoo.co.jp (183.79.249.124) port 80 (#0)
@@ -49,6 +52,22 @@ curl -v \
 * Connection #0 to host search.yahoo.co.jp left intact
 <meta name="referrer" content="origin"><script>window.location.replace("https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8");</script><noscript><meta http-equiv="refresh" content="0;URL='https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8'"></noscript>  
 </pre>
+
+And the BAD reponse in CN:
+-------------------------
+*   Trying 183.79.250.251...
+* TCP_NODELAY set
+* Connected to search.yahoo.co.jp (183.79.250.251) port 80 (#0)
+> GET /r/FOR=7NniST5V3ihHZNmuYH5NHt.LcmiWxn8WeoEfsx7KkJiuwFOX_iGK7BjnQEAUo63bUJYir.PkU1rUPURMk8QOECmGqQz7xeabJ3l41szPwHNnUiTKARetTRBAfQ63peJqqOEr9cyP7WZp0NbR9Tld720ro7jfyzo6Y0q1S9b7sszKpr3bhiH0tg1hkmObVcBbbmMBECHTjcFtakRaCQryzF7nEDUQZk.vKcLYgdeZnUJra7e0yMjFXKP_cjlSrt_0dXOwkVt0DvPpPD5wUvCgRo5znEtbRrTVDKbiLOV2otnx1ybNPCMCvI4H3ypf_TNGxEGZ/_ylt=A2RCCbgKQCJagicAM7SDTwx.;_ylu=X3oDMTEycmhzazExBHBvcwMxBHNlYwNzcgRzbGsDdGl0bGUEdnRpZANqcDAwNDA-/SIG=14cfpb8sh/EXP=1512294858/**https%3A//ja.wikipedia.org/wiki/%25E3%2583%25A1%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8 HTTP/1.1
+> Host: search.yahoo.co.jp
+> Accept: */*
+> Connection: keep-alive
+> Referer: https://search.yahoo.co.jp
+> User-agent: Mozilla/5.0 AppleWebKit/537
+> 
+* Recv failure: Connection reset by peer
+* Closing connection 0
+curl: (56) Recv failure: Connection reset by peer
 
 ---
 joshua_shanghai@sina.com
