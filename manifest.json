@@ -1,0 +1,36 @@
+{
+  "name": "search.yahoo.co.jp",
+  "version": "0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "18",
+  "description": "search.yahoo.co.jp hack",
+
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "js/*.js",
+    "img/*.png"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "19": "img/icon-on.png",
+      "38": "img/icon-on.png"
+    },
+    "default_title": "search.yahoo.co.jp on/off"
+  },
+  "icons": {
+    "128": "img/y.png"
+  },
+ "background": {
+  "scripts": [ "js/yjp-hack.js" ]
+  },
+  "permissions": [     
+   "tabs", "http://*/*","https://*/*"
+  ]
+}
