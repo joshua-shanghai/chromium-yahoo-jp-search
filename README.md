@@ -4,7 +4,7 @@ yahoo jp search hack
 
 To use yahoo jp search from china, do the following steps:
 
-add the following entries to your hosts file. 
+Add the following entries to your hosts file. 
 -------------------------------------------
 
 183.79.250.251 search.yahoo.co.jp <br>
@@ -14,9 +14,13 @@ add the following entries to your hosts file.
 the hosts file is in /etc/ on Linux, normally in c:\windows\system32\ on windows,
 and /private/etc/ on mac.
 
-install this chromium extension
+Install this chromium extension
 --------------------------------
 from chromium browser, enter chromium://extensions and hit return key. then click "Load unpacked extension ..." and follow the UI to load this extension.
+
+Toggle the extension
+-------------------
+Click it to toggle it.
 
 TODO
 ----
