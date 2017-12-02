@@ -7,9 +7,9 @@ To use yahoo jp search from china, do the following steps:
 add the following entries to your hosts file. 
 -------------------------------------------
 
-183.79.250.251 search.yahoo.co.jp \<br>
-182.22.25.252  s.yimg.jp \<br>
-183.79.249.252 b11.yahoo.co.jp \<br>
+183.79.250.251 search.yahoo.co.jp <br>
+182.22.25.252  s.yimg.jp <br>
+183.79.249.252 b11.yahoo.co.jp <br>
 
 the hosts file is in /etc/ on Linux, normally in c:\windows\system32\ on windows,
 and /private/etc/ on mac.
