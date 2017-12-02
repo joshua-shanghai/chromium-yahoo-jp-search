@@ -3,7 +3,7 @@
  * to http://search.yahoo.co.jp again. somehow the server will reject the request. so what I do here
  * is to make onmousedown() exec an empty function.
  *
- * 2017-12-01/zhan
+ * 2017-12-01/joshua-shanghai
 */
 (function(view) {
     function injectJs(tabId, fileName, succeededMessage, addedToHead, addedAsFirstChild, withOption) {
